@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Inter-Medium;
+  src: url(../content/fonts/Inter-Medium.woff2) format(woff2);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter-Regular;
+  src: url(../content/fonts/Inter-Regular.woff2) format(woff2);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter-SemiBold;
+  src: url(../content/fonts/Inter18pt-SemiBold.woff2) format(woff2);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../content/fonts/Roboto-Bold.woff2) format(woff2);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

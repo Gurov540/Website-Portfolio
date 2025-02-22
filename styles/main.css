@@ -1,0 +1,430 @@
+@import url(reset.css);
+@import url(fonts.css);
+@import url(media.css);
+
+hr {
+  border: none;
+  border-top: 1.5px solid #f0f0f6;
+  color: #f0f0f6;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  margin: 25px 0;
+}
+
+body {
+  background-color: #f0f0f6;
+  display: flex;
+  gap: 28.5px;
+}
+
+.side-profile-menu {
+  min-width: 305px;
+  background-color: #fff;
+  padding: 50px 40px 25px 40px;
+}
+.block-profile {
+}
+.img-avatar-block {
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.online-indicator {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #7eb942;
+  border-radius: 50%; /* Круглая форма */
+  bottom: 12px; /* Отступ от нижнего края */
+  right: 46.5px; /* Отступ от правого края */
+  border: 2px solid white; /* Белая рамка, чтобы был виден на фоне */
+}
+.avatar-img {
+  margin: 0px 34.5px;
+}
+.person-name {
+  text-align: center;
+  color: #2b2b2b;
+  font-family: Inter-Medium;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.person-specialization {
+  text-align: center;
+  color: #767676;
+  font-family: Inter-Regular;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.person-socials {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.social {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffb400;
+  border-radius: 100%;
+}
+.block-about {
+  color: #2b2b2b;
+  font-family: Inter-Regular;
+  font-size: 15px;
+  line-height: 24px;
+}
+.person-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.person-info-heading {
+  background-color: #ffb400;
+  color: #2b2b2b;
+  font-family: Inter-Regular;
+  font-size: 15px;
+  line-height: 24px;
+}
+.person-info-data {
+  color: #2b2b2b;
+  font-family: Inter-Regular;
+  font-size: 15px;
+  line-height: 24px;
+  text-wrap: nowrap;
+}
+.person-info.freelance .person-info-data {
+  color: #7eb942;
+}
+.block-heading {
+  color: #2b2b2b;
+  font-family: Inter-Medium;
+  font-size: 18px;
+  line-height: 123.6%;
+  margin-bottom: 15px;
+}
+.progress-block {
+}
+.progress-block-heading {
+  color: #767676;
+  font-family: Inter-Regular;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.progress {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  padding: 1px;
+  border-radius: 15px; /* Скругленные углы */
+  border: 2px solid #ffb400; /* Желтые края */
+  overflow: hidden; /* Чтобы внутренние элементы тоже были скруглены */
+}
+
+/* Стили для progress для браузеров на основе WebKit (например, Chrome, Safari) */
+.progress::-webkit-progress-bar {
+  background-color: #f3f3f3;
+  border-radius: 15px;
+}
+
+.progress::-webkit-progress-value {
+  background-color: #ffb400; /* Желтая шкала прогресса */
+  border-radius: 15px 0 0 15px; /* Скругляем только левую часть, чтобы не повредить анимацию заполнения */
+}
+
+/* Стили для Firefox */
+.progress::-moz-progress-bar {
+  background-color: #ffb400; /* Желтая шкала прогресса */
+  border-radius: 15px; /* Скругляем углы */
+}
+.extraskills {
+  display: flex;
+}
+.extraskills-name {
+  color: #767676;
+  font-family: Inter-Medium;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+.cv-download-button {
+  height: 40px;
+  width: 100%;
+  background-color: #ffb400;
+  text-transform: uppercase;
+  color: #2b2b2b;
+  font-family: Inter-SemiBold;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+}
+/* *========================================================================================= */
+
+.main-block {
+  width: 100%;
+}
+
+.main-menu {
+  background-image: url(/content/images/main-menu-bg.png);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.block-content {
+  padding: 93px 0 0 60px;
+}
+ 
+.block-content h1 {
+  font-family: Inter-SemiBold;
+  font-size: 48px;
+  line-height: 123.6%;
+  color: #2B2B2B;
+}
+
+.block-content h1 span {
+  color: #FFA500; /* Оранжевый цвет для "Front-end Developer" */
+}
+
+.block-content p {
+  font-family: Inter-Regular;
+  font-size: 16px;
+  color: #767676;
+}
+
+.main-menu_button {
+  padding: 10px 20px;
+  background-color: #FFA500;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 25px;
+  color: #2B2B2B;
+  font-family: Inter-Medium;
+}
+
+.main-menu_button:hover {
+  background-color: #ff8c00;
+}
+
+.your-img img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* *========================================================================================= */
+
+  .block-service {
+    margin-top: 138px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.service-heading {
+  color: #2b2b2b;
+  font-family: Inter-SemiBold;
+  font-size: 32px;
+  line-height: 123.6%;
+  margin-bottom: 25px;
+}
+
+.service-description {
+  color: #767676;
+  width: 438px;
+  text-align: center;
+  font-family: Inter-Regular;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-container {
+  width: 310px;
+  height: 225px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-container h1 {
+  color: #2b2b2b;
+  font-family: Inter-Medium;
+  font-size: 18px;
+  line-height: 123.6%;
+  margin: 26px 0 25px 0;
+}
+.service-container p {
+  color: #767676;
+  font-family: Inter-Regular;
+  text-align: center;
+  font-size: 15px;
+  line-height: 24px;
+  max-width: 260px;
+}
+
+.service-container a {
+  color: #FFB400;
+  font-family: Roboto-Bold;
+  font-size: 12px;
+  line-height: auto;
+  margin: 30px 0 27px 0;
+}
+
+/* *========================================================================================= */
+
+.block-price {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price-heading {
+  color: #2b2b2b;
+  font-family: Inter-SemiBold;
+  font-size: 32px;
+  line-height: 123.6%;
+  margin-bottom: 25px;
+}
+.price-description {
+  color: #767676;
+  width: 438px;
+  text-align: center;
+  font-family: Inter-Regular;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+.prices {
+  display: flex;
+  gap: 21px;
+}
+.price-container {
+  width: 310px;
+  height: 609px;
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 33px 25px 33px;
+}
+.price-container h1{
+  color: #2b2b2b;
+  font-family: Inter-SemiBold;
+  font-size: 24px;
+  line-height: 123.6%;
+  margin-top: 54px;
+}
+.price {
+  color: #2b2b2b;
+  font-family: Inter-SemiBold;
+  font-size: 32px;
+  line-height: 123.6%;
+  margin-top: 19px;
+}
+.price span{
+  color: #2b2b2b;
+  font-family: Inter-Regular;
+  font-size: 15px;
+  line-height: 24px;
+}
+.price-container p{
+  color: #767676;
+  font-family: Inter-Regular;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 8px;
+}
+.price-container ul{
+  color: #2B2B2B;
+  font-family: Inter-Regular;
+  font-size: 15px;
+  line-height: 24px;
+  width: 100%;
+  margin: 21px 0 5px 0;
+}
+.price-container ul li{
+display: flex;
+margin: 0 0 16px 0;
+}
+.price-button {
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  width: 169px;
+  height: 38px;
+  color: #2B2B2B;
+  font-family: Inter-SemiBold;
+  font-size: 14px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* *========================================================================================= */
+
+.side-block-menu {
+  min-width: 108px;
+  background-color: #fff;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Центрирует содержимое по вертикали */
+  align-items: center; /* Центрирует содержимое по горизонтали */
+  height: 100vh; /* Высота блока на всю высоту экрана */
+  position: sticky;
+  top: 0;
+  align-self: start;
+}
+.block-theme-switch-btn {
+}
+.theme-switch-btn {
+  margin: 0 auto;в
+}
+.nav-menu {
+  flex-grow: 1; /* Занимает оставшееся пространство по вертикали */
+  display: flex;
+  justify-content: center; /* Центрирует содержимое меню */
+}
+.nav-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  justify-content: center;
+  align-items: center;
+}
+.nav-menu-item {
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f6;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-menu-link * {
+  fill: #767676;
+}
